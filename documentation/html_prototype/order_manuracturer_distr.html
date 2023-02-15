@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Manufaturers</title>
+</head>
+<body>
+    <header>
+        <div class="topnav">
+          <a class='active' href="manufacturers.html">Manufaturers</a>
+          <a href="distributors.html">Distributors</a>
+          <a href="outlets.html">Outlets</a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <h3>List of delivery</h3>
+            <div class="search">
+                <form>
+                  <label>Period:</label>
+                  <input type="date" id="start" name="start">:
+                  <input type="date" id="end" name="start">
+                  <input type="submit" value="Search">
+                </form>
+            </div>
+        </div>
+        <table>
+          <tr>
+            <th>Name manufacturer</th>
+            <th>Code manufacturer</th>
+            <th>Name distributor</th>
+            <th>Code distributor</th>
+            <th>Date</th>
+            <th>Sum</th>
+            <th></th>
+            <th></th>
+          </tr>
+          <tr>
+            <td>Lactalis</td>
+            <td>1111</td>
+            <td>Distr3</td>
+            <td>555</td>
+            <td>12.03.2022</td>
+            <td>2000</td>
+            <td><a href="#edit_manufaturer">Edit</a></td>
+            <td><a href="#">Delete</a></td>
+          </tr>
+          <tr>
+            <td>Lactalis</td>
+            <td>1111</td>
+            <td>Distr2</td>
+            <td>444</td>
+            <td>04.07.2022</td>
+            <td>12980</td>
+            <td><a href="#edit_manufaturer">Edit</a></td>
+            <td><a href="#">Delete</a></td>
+          </tr>
+          <tr>
+            <td>Olis</td>
+            <td>1456</td>
+            <td>Distr2</td>
+            <td>444</td>
+            <td>04.07.2022</td>
+            <td>3870</td>
+            <td><a href="#edit_manufaturer">Edit</a></td>
+            <td><a href="#">Delete</a></td>
+          </tr>
+          <tr>
+            <td>AXA</td>
+            <td>5568</td>
+            <td>Distr1</td>
+            <td>333</td>
+            <td>24.05.2022</td>
+            <td>5500</td>
+            <td><a href="#edit_manufaturer">Edit</a></td>
+            <td><a href="#">Delete</a></td>
+          </tr>
+        </table>
+        <div>
+            <a href='add_distr_order.html'><button>Add</button></a>
+        </div>
+    </div>
+</body>
+</html>

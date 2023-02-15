@@ -1,0 +1,61 @@
+*{
+    font-size: 17px;
+    text-decoration: none;
+}
+.topnav{
+    background-color:grey;
+    overflow: hidden;
+}
+.topnav a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+}
+.active{
+    background-color: blue;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+th, td {
+  text-align: center;
+  padding: 16px;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.edit_form{
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+input[type=text] {
+  width: 40%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+.btn {
+  background-color: blue;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 40%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+.search{
+    float:right;
+}
