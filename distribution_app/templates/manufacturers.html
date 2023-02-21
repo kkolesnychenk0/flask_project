@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container">
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Code</th>
+            <th>Country</th>
+            <th>Number of distributors</th>
+            <th></th>
+          </tr>
+          {% for manufacturer in manufacturers_list %}
+          <tr>
+            <td>{{manufacturer.name_manufacturer}}</td>
+            <td>{{manufacturer.code_manufacturer}}</td>
+            <td>{{manufacturer.country}}</td>
+            <td><a href="#">5</a></td>
+            <td><a href="#" class="edit_btn">Edit</a><a href="#" class="del_btn">Delete</a></td>
+          </tr>
+          {% endfor %}
+        </table>
+        <div class="add">
+            <a href='#' class="add_btn">Add</a>
+        </div>
+    </div>
+{% endblock %}
