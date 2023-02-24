@@ -3,7 +3,7 @@ from ..models.model import Manufacturer
 
 bp = Blueprint('view', __name__)
 
-@bp.route('/')
+@bp.route('/',methods=['GET'])
 def manufacturers():
     title='Manufacturers'
     manufacturers_list=Manufacturer.query.all()

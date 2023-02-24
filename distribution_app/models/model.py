@@ -1,4 +1,4 @@
-from .. import db
+from distribution_app.utils.db import db
 
 
 class Manufacturer(db.Model):
@@ -11,6 +11,10 @@ class Manufacturer(db.Model):
 
     def __repr__(self):
         return f'Manufacturer:{self.id},{self.name_manufacturer},{self.code_manufacturer},{self.country}'
+
+    def json(self):
+        return {'name_manufacturer': self.name_manufacturer, 'code_manufacturer': self.code_manufacturer,
+                'country': self.country}
 
 class Distributor(db.Model):
     __tablename__ ='distributors'
