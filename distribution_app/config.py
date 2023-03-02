@@ -11,7 +11,8 @@ class DevConfig(Config):
 
 class TestConfig(Config):
     TESTING=True
-    SQLALCHEMY_DATABASE_URI="mysql+mysqlconnector://root:qwerty123@localhost/test_distribution"
+    #SQLALCHEMY_DATABASE_URI="mysql+mysqlconnector://root:qwerty123@localhost/test_distribution"
+    SQLALCHEMY_DATABASE_URI = 'sqlite://'
 
 config_dict={
     'dev':DevConfig,
